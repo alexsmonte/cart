@@ -1,0 +1,36 @@
+{
+	"name": "cakeshop/cart",
+    "description": "A simple shopping cart.",
+    "type": "plugin",
+    "license": "MIT",
+    "keywords": ["cakephp", "ecommerce", "shop", "cart"],
+    "authors": [
+        {
+            "name": "WebDevBr Brasil",
+            "homepage": "https://github.com/WebDevBr/cart"
+        },
+        {
+            "name":"Alex Monte",
+            "homepage":"http://www.leleco.blog.br"
+        }
+    ],
+    "support":{
+        "Slack": "https://cakephpbrasil.slack.com/"
+    },
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "3.*"
+    },
+    "require-dev": {
+		"cakephp/cakephp-codesniffer": "master-dev",
+		"phpunit/phpunit": "4.*"
+    },
+	"autoload": {
+		"psr-4": {
+			"Cart\\": "src/"
+		},
+		"files": [
+			"functions.php"
+		]
+	}
+}        
