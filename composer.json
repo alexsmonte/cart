@@ -1,5 +1,5 @@
 {
-	"name": "cakeshop/cart",
+	"name": "Cart",
     "description": "A simple shopping cart.",
     "type": "plugin",
     "license": "MIT",
