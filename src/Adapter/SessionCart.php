@@ -23,7 +23,7 @@ class SessionCart implements CartInterface
             $this->session->write('shop.cart', []);
     }    
     
-    public function add($product)
+    public function add(Array $product)
     {
         if (!is_array($product))
             return false;
@@ -59,7 +59,7 @@ class SessionCart implements CartInterface
         return $this->session->write('shop.cart');
     }
     
-     /***
+    /***
     * Retorna a chave do array
     * Return the key of an array
     **/
@@ -74,6 +74,3 @@ class SessionCart implements CartInterface
     }
     
 }
-
-
-?>
