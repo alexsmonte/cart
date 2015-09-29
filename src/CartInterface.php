@@ -6,7 +6,7 @@ use Cake\Controller\Component;
 
 interface CartInterface
 {
-    public function list();
+    public function all();
     
     public function add(Array $product);
     
@@ -14,5 +14,3 @@ interface CartInterface
     
     public function initialize(Component $component);
 }
-
-?>
