@@ -5,8 +5,12 @@ namespace Cart\Controller\Component;
 use Cart\CartInterface;
 use Cake\Controller\Component;
 use Cake\Controller\ComponentRegistry;
+use Cake\Core\App;
+use Cake\Core\Configure;
+use Cake\Core\Configure\Engine\IniConfig;
+use Cake\Core\Exception\Exception;
 
-public function CartComponent extends Component
+class CartComponent extends Component
 {
 
     protected $_Instance = null;
@@ -43,9 +47,9 @@ public function CartComponent extends Component
     }
     
     
-    public function list()
+    public function all()
     {
-        return $this->_Instance->list();
+        return $this->_Instance->all();
     }
     
     public function add($product)
@@ -58,6 +62,3 @@ public function CartComponent extends Component
         return $this->_Instance->delete($product_id);
     }
 }
-
-
-?>
