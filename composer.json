@@ -1,9 +1,9 @@
 {
-	"name": "Cart",
+	"name": "cakeshop/Cart",
     "description": "A simple shopping cart.",
     "type": "plugin",
     "license": "MIT",
-    "keywords": ["cakephp", "ecommerce", "shop", "cart"],
+    "keywords": ["cakephp", "ecommerce", "shop", "cart", "sale"],
     "authors": [
         {
             "name": "WebDevBr Brasil",
